@@ -18,7 +18,7 @@ s_alice = pow(B, a_private_key, p)
 s_bob = pow(A, b_private_key, p)
 
 
-# Aplicar hash SHA-256
+#Paso 5 Aplicar hash SHA-256
 s_alice_hash = hashlib.sha256(str(s_alice).encode()).hexdigest()
 s_bob_hash = hashlib.sha256(str(s_bob).encode()).hexdigest()
 
